@@ -1,0 +1,155 @@
+@import 'node_modules/foundation-sites/scss/foundation';
+
+@include foundation-global-styles;
+@include foundation-grid;
+$border-styles: 1px dotted black;
+$grid-row-width: 100em;
+
+body{
+    background-color: white;
+}
+.header1{
+    @include grid-row(12);
+    
+}
+.h1{
+    @include grid-column(10);
+    text-align:center;
+    margin: 20px;
+}
+#tabs{
+    @include grid-row(12);
+    display:flex;
+    flex-direction:row;
+}
+.tab1{
+      @include grid-column(3);
+      background-color:white;
+}
+.section1{
+    @include grid-row(12);
+   //border: $border-styles;
+    text-align: center;
+   
+}
+
+    .a_div1{
+        background-image: url('image/AB_popup.jpg');
+        @include grid-column(8);
+        //border: $border-styles;
+        height: 300px;
+        color: yellow;
+        
+    }
+    @media (max-width: 600px){
+    .a_div1{
+         background-image: url('image/AB_popup.jpg');
+        @include grid-column(12);
+        //border: $border-styles;
+        height: 300px;
+        color: yellow;
+    }
+    }
+
+    .u_div{
+        @include grid-column(4);
+        background-image: url('image/utility_bhero4.jpg');
+    //border: $border-styles;
+        height: 300px;
+        font-size: 18px;
+        color:white;
+    }
+
+    @media (max-width : 600px){
+    .u_div{
+        @include grid-column(12);
+        background-image: url('image/utility_bhero4.jpg');
+    //border: $border-styles;
+        height: 300px;
+        font-size: 18px;
+        color:white;
+    }
+    }
+    
+    #sec_field{
+        background-image: url('image/bellroy_canteenhero.jpg');
+        height:550px;
+        text-align: center;
+        padding: 120px;
+        color: white;
+        font:bold;
+    }
+ 
+.btn1{
+    border: $border-styles;
+    color: white;
+    width:20%;
+    height:40px;
+}
+.btn_s{
+   border: $border-styles;
+    width:30%;
+    height:40px;
+    color:white;
+}  
+ .btn_aval{
+     border: $border-styles;
+     width:95%;
+     height:40px;
+     color: white;
+ }
+
+section.section1{
+    .div_grid {
+        @include grid-column(3); // 25% of screen
+        border:$border-styles;
+            height: 500px;
+    }
+
+    @media (max-width: 600px) {
+        .div_grid {
+            @include grid-column(6); // 50% of screen
+            border:$border-styles;
+            height: 500px;
+        }
+    }
+ }
+
+
+.img_div{
+    text-align: center;
+}
+
+ .d_grid{
+     @include grid-column(4);
+     //border: $border-styles;
+     height: 200px;
+     text-align: top;
+ }
+@media (max-width: 600px){
+    .d_grid{
+     @include grid-column(12);
+     //border: $border-styles;
+     height: 200px;
+     text-align: top;
+ }
+}
+
+    section.section_1{
+        @include grid-row(12); 
+        .d_grid{
+        background-image: url('image/kraft-bg.jpg');
+        text-align: center;
+        }
+        
+    }
+
+ #P_field{
+     font-size: 45px;
+     margin: 5px;
+ }
+ 
+ 
+
+
+
